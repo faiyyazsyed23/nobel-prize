@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bosstrap.css">
+
+
+<style>
+
+.body{
+  background-color: black;
+}
+.banner333 {
+    width: 80%;
+    height: 70vh;
+    margin: 20px auto; /* Adds space between the banner and the navbar */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image fits within the banner dimensions */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 10%;
+}
+
+.banner333-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the banner area */
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.section-header {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.section-header-h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.article-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 70%;
+  
+}
+
+.article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  overflow: hidden;
+  transition: transform 0.3s;
+  height: 60vh;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
+
+
+.article:hover {
+    transform: scale(1.05);
+    border-radius: 20%;
+}
+.headline {
+  font-size: 20px;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.headline a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text p {
+  font-size: 16px;
+  color: #666;
+}
+
+.featured-image {
+  position: relative;
+  width: 100%;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+.figcaption {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #555;
+  text-align: left;
+}
+
+.figcaption__caption {
+  font-weight: bold;
+}
+
+.figcaption__attribution {
+  font-size: 12px;
+  color: #888;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.article-grid {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content-body {
+  padding: 20px;
+}
+
+.article-title {
+  margin-bottom: 15px;
+}
+
+.article-headline {
+  font-size: 22px;
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.article-headline a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-text {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.related-links {
+  margin-top: 20px;
+}
+
+.related-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.related-links ul {
+  list-style: none;
+}
+
+.related-links li {
+  margin-bottom: 8px;
+}
+
+.related-links a {
+  text-decoration: none;
+  color: #0073e6;
+  font-size: 16px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-caption {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.chemistry-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  border-top: 2px solid #333;
+  padding: 10px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.row-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chemistry-article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 30%;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+    height: 60vh;
+}
+
+
+
+.chemistry-article:hover {
+    transform: scale(1.05);
+    border-radius: 20%;
+}
+
+.info-wrapper {
+  padding: 15px;
+}
+
+.info-header {
+  margin-bottom: 10px;
+}
+
+.name-title {
+  font-size: 20px;
+}
+
+.name-heading {
+  font-size: 20px;
+  color: #0073e6;
+}
+
+.name-heading a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+.caption {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+/* Container and Layout */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.special-content {
+    border-top: 3px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.half-width-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Article Styling */
+.grid-item-half {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Text Styling */
+.header-text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.title-small-container {
+    margin: 0;
+}
+
+.heading-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.heading-link a:hover {
+    color: #0077b6;
+}
+
+/* Text and Summary */
+.summary-text {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Related Articles */
+.link-collection {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.related-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.link-collection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-collection li a {
+    color: #0077b6;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.link-collection li a:hover {
+    text-decoration: underline;
+}
+
+/* Image and Caption */
+.visual-section {
+    position: relative;
+    width: 100%;
+}
+
+.visual-section img {
+  margin-left: 25%;
+    width: 50%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.caption-text {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    padding: 8px;
+    background-color: #f4f4f4;
+}
+
+
+
+
+/* Container and Layout */
+.nobel-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nobel-featured-content {
+    border-top: 3px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.nobel-half-width {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Article Styling */
+.nobel-article {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Text Styling */
+.nobel-content-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nobel-title-small {
+    margin: 0;
+}
+
+.nobel-headline a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nobel-headline a:hover {
+    color: #0077b6;
+}
+
+/* Text and Summary */
+.nobel-text {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Related Articles */
+.nobel-related {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.nobel-related-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.nobel-related ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nobel-related li a {
+    color: #0077b6;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.nobel-related li a:hover {
+    text-decoration: underline;
+}
+
+/* Image and Caption */
+.nobel-featured-image {
+    position: relative;
+    width: 100%;
+}
+
+.nobel-featured-image img {
+    width: 60%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-left: 25%;
+}
+
+.nobel-caption {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    padding: 8px;
+    background-color: #f4f4f4;
+}
+
+
+
+
+/* Container and Layout */
+.literature-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.literature-content {
+    border-top: 4px solid #ccc;
+    padding: 20px;
+}
+
+.literature-width {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Article Styling */
+.literature-article {
+    flex: 1 1 calc(50% - 20px);
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Header Text Styling */
+.literature-header {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.literature-title {
+    margin: 0;
+}
+
+.literature-headline a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.literature-headline a:hover {
+    color: #0066cc;
+}
+
+/* Text and Summary */
+.literature-text {
+    padding: 15px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Links */
+.literature-text a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.literature-text a:hover {
+    text-decoration: underline;
+}
+
+/* Image and Caption */
+.literature-image {
+    position: relative;
+    width: 100%;
+}
+
+.literature-image img {
+    width: 60%;
+    height: 70vh;
+    display: block;
+    margin-left: 20%;
+}
+
+.literature-caption {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    line-height: 1.4;
+}
+
+
+/* Container and Layout */
+.knowledge-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fafafa;
+}
+
+.knowledge-content-box {
+    flex: 3;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+/* Header and Title */
+.knowledge-title-box {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.knowledge-headline a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.knowledge-headline a:hover {
+    color: #004d99;
+}
+
+/* Text Content */
+.knowledge-description {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Related Articles */
+.knowledge-related-links {
+    margin-top: 20px;
+}
+
+.related-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.knowledge-related-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.knowledge-related-links ul li {
+    margin-bottom: 8px;
+}
+
+.knowledge-related-links ul li a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.knowledge-related-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Image and Caption */
+.knowledge-image-box {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knowledge-image-box img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.knowledge-image-caption {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+</style>
+
+
+
+</head>
+<body class="body" data-aos="fade-down"> 
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nobel Prizes Navbar</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="home.html">
+            <img src="image/looooooooo.png" alt="Nobel Prizes Logo" class="logo-img" style="width: 50px;">
+            <span>Nobel Prizes</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nobel prize & laureates
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="All Nobel Prize.html">All Nobel prizes</a></li>
+                        <li><a class="dropdown-item" href="All Nobel prizes 2024.html">All Nobel prizes 2024</a></li>
+                        <li><a class="dropdown-item" href="Physics prize.html">Physics prize</a></li>
+                        <li><a class="dropdown-item" href="Chemistry prize.html">Chemistry prize</a></li>
+                        <li><a class="dropdown-item" href="Medicine prize.html">Medicine prize</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    
+                    </ul>
+                </li>
+                <!-- About link without dropdown -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                <li class="nav-item"><a class="nav-link" href="Educational.html">Educational</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+<div class="banner333" data-aos="zoom-in">
+    <img src="image/alfred nobel.jpg" alt="Banner Image" class="banner333-img">
+</div>
+
+
+<div class="figcaption" data-aos="zoom-in">
+    <h1 style="text-align: center; color: goldenrod;">NOBEL PRIZES 2024</h1>
+    <p style="text-align: center; color: #ddd;">Statue of Alfred Nobel. Photo: A. Mahmoud..</p>
+</div>
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+<h3 style="color: goldenrod; margin-left: 10%;" data-aos="zoom-in"><b>The Nobel Prize in Physics 2024</b></h3>
+
+
+
+
+<section class="article-grid featured-content" data-aos="flip-left">
+   
+  
+    <article class="article">
+      <div class="content-wrapper">
+        <header class="content">
+          <div class="title">
+            <h2 class="headline" style="color: goldenrod;">
+              <a href="https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/">John Hopfield</a>
+            </h2>
+          </div>
+        </header>
+        <div class="text">
+          <p>“for foundational discoveries and inventions that enable machine learning with artificial neural networks”</p>
+        </div>
+      </div>
+      <figure class="featured-image">
+        <a href="https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/">
+          <img src="image/jhon j hopfiled.webp" alt="John Hopfield">
+        </a>
+        <figcaption class="figcaption">
+          <p class="figcaption__caption" >John Hopfield.</p>
+          <p class="figcaption__attribution">Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+    <article class="article">
+      <div class="content-wrapper">
+        <header class="content">
+          <div class="title">
+            <h2 class="headline" style="color: goldenrod;">
+              <a href="https://www.nobelprize.org/prizes/physics/2024/hinton/facts/">Geoffrey Hinton</a>
+            </h2>
+          </div>
+        </header>
+        <div class="text">
+          <p>“for foundational discoveries and inventions that enable machine learning with artificial neural networks”</p>
+        </div>
+      </div>
+      <figure class="featured-image">
+        <a href="https://www.nobelprize.org/prizes/physics/2024/hinton/facts/">
+          <img src="image/geoffrey hinton.webp" alt="Geoffrey Hinton">
+        </a>
+        <figcaption class="figcaption">
+          <p class="figcaption__caption">Geoffrey Hinton.</p>
+          <p class="figcaption__attribution">Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+  </section>
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+  <section class="content-section article-grid" data-aos="zoom-in">
+    <article class="article-container">
+      <div class="content-body">
+        <header class="article-header">
+          <div class="article-title">
+            <h2 class="article-headline">
+              <a href="https://www.nobelprize.org/prizes/physics/2024/press-release/">
+                They used physics to find patterns in information
+              </a>
+            </h2>
+          </div>
+        </header>
+        <div class="article-text">
+          <p>This year’s laureates used tools from physics to construct methods that helped lay the foundation for today’s powerful machine learning. John Hopfield created a structure that can store and reconstruct information. Geoffrey Hinton invented a method that can independently discover properties in data and which has become important for the large artificial neural networks now in use.</p>
+        </div>
+        <div class="related-links">
+          <h3 class="related-title">Related articles</h3>
+          <ul>
+            <li><a href="https://www.nobelprize.org/prizes/physics/2024/press-release/" title="Press release">Press release</a></li>
+            <li><a href="https://www.nobelprize.org/prizes/physics/2024/popular-information/" title="Popular information: They used physics to find patterns in information">Popular information: They used physics to find patterns in information</a></li>
+            <li><a href="https://www.nobelprize.org/prizes/physics/2024/advanced-information/" title="Scientific background">Scientific background: “for foundational discoveries and inventions that enable machine learning with artificial neural networks”</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <figure class="image-container">
+        <a href="https://www.nobelprize.org/prizes/physics/2024/press-release/">
+          <img src="image/fig_fy_24_4x3-1024x676.webp" alt="Illustration">
+        </a>
+        <figcaption class="image-caption">
+          <p>© Johan Jarnestad/The Royal Swedish Academy of Sciences</p>
+        </figcaption>
+      </figure>
+    </article>
+  </section>
+  
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+<section class="chemistry-section content-color-default row-layout" data-aos="zoom-out-up">
+  
+  
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="chemistry-article column-third">
+      <div class="info-wrapper">
+        <header class="info-header">
+          <div class="name-title">
+            <h2 class="name-heading h3" itemprop="headline">
+              <a href="https://www.nobelprize.org/prizes/chemistry/2024/baker/facts/">David Baker</a>
+            </h2>
+          </div>
+        </header>
+        <div class="description">
+          <p>“for computational protein design”</p>
+        </div>
+      </div>
+      <figure class="image-wrapper">
+        <a href="https://www.nobelprize.org/prizes/chemistry/2024/baker/facts/">
+          <img src="image/David baker.webp" alt="David Baker">
+        </a>
+        <figcaption class="caption">
+          <p>David Baker.</p> 
+          <p>Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="chemistry-article column-third">
+      <div class="info-wrapper">
+        <header class="info-header">
+          <div class="name-title">
+            <h2 class="name-heading h3" itemprop="headline">
+              <a href="https://www.nobelprize.org/prizes/chemistry/2024/hassabis/facts/">Demis Hassabis</a>
+            </h2>
+          </div>
+        </header>
+        <div class="description">
+          <p>“for protein structure prediction”</p>
+        </div>
+      </div>
+      <figure class="image-wrapper">
+        <a href="https://www.nobelprize.org/prizes/chemistry/2024/hassabis/facts/">
+          <img src="image/Demis hassabis.webp" alt="Demis Hassabis">
+        </a>
+        <figcaption class="caption">
+          <p>Demis Hassabis.</p>
+          <p>Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="chemistry-article column-third">
+      <div class="info-wrapper">
+        <header class="info-header">
+          <div class="name-title">
+            <h2 class="name-heading h3" itemprop="headline">
+              <a href="https://www.nobelprize.org/prizes/chemistry/2024/jumper/facts/">John Jumper</a>
+            </h2>
+          </div>
+        </header>
+        <div class="description">
+          <p>“for protein structure prediction”</p>
+        </div>
+      </div>
+      <figure class="image-wrapper">
+        <a href="https://www.nobelprize.org/prizes/chemistry/2024/jumper/facts/">
+          <img src="image/jhon jumper.webp" alt="John Jumper">
+        </a>
+        <figcaption class="caption">
+          <p>John Jumper.</p> 
+          <p>Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+  </section>
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+  
+
+<!-- HTML Section with Unique Class Names -->
+<section class="grid-container special-content special-content--highlight half-width-layout" data-aos="zoom-out-up">
+
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="grid-item-half">
+      <div class="text-wrapper">
+          <header class="header-text">
+              <div class="title-small-container">
+                  <h2 class="heading-link" itemprop="headline">
+                      <a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/">
+                          <p>They cracked the code for proteins&#8217; amazing structures</p>
+                      </a>
+                  </h2>
+              </div>
+          </header>
+          <div class="summary-text">
+              <p>The Nobel Prize in Chemistry 2024 is about proteins, life&#8217;s ingenious chemical tools. David Baker has succeeded with the almost impossible feat of building entirely new kinds of proteins. Demis Hassabis and John Jumper have developed an AI model to solve a 50-year-old problem: predicting proteins&#8217; complex structures. These discoveries hold enormous potential.</p>
+          </div>
+          <div class="link-collection">
+              <h3 class="related-heading">Related articles</h3>
+              <ul>
+                  <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/" title="Press release">Press release</a></li>
+                  <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/popular-information/" title="Popular information: They have revealed proteins’ secrets through computing and artificial intelligence">Popular information: They have revealed proteins’ secrets through computing and artificial intelligence</a></li>
+                  <li><a href="https://www.nobelprize.org/prizes/chemistry/2024/advanced-information/" title="Scientific background: Computational protein design and protein structure prediction">Scientific background: Computational protein design and protein structure prediction</a></li>
+              </ul>
+          </div>
+      </div>
+      <figure class="visual-section">
+          <a href="https://www.nobelprize.org/prizes/chemistry/2024/press-release/">
+              <picture>
+                  <source data-srcset="https://www.nobelprize.org/uploads/2024/10/fig_ke_24_4x3-992x656.jpg" media="(min-width: 220px)" />
+                  <source data-srcset="https://www.nobelprize.org/uploads/2024/10/fig_ke_24_4x3-1520x1008.jpg" media="(min-width: 900px)" />
+                  <source data-srcset="https://www.nobelprize.org/uploads/2024/10/fig_ke_24_4x3-2000x1352.jpg" media="(min-width: 1400px)" />
+                  <img decoding="async" class="image-lazyload" src="image/popular-chemistryprize2024-carrier-760x504.webp" alt="Nobel Prize Chemistry 2024" />
+              </picture>
+          </a>
+          <figcaption class="caption-text">© Johan Jarnestad/The Royal Swedish Academy of Sciences</figcaption>
+      </figure>
+  </article>
+</section>
+
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+
+<h3 style="color: goldenrod; margin-left: 10%;"><b>The Nobel Prize in Physiology or Medicine 2024..</b></h3>
+
+
+
+
+<section class="article-grid featured-content" data-aos="zoom-out-up">
+   
+  
+    <article class="article">
+      <div class="content-wrapper">
+        <header class="content">
+          <div class="title">
+            <h2 class="headline">
+              <a href="https://www.nobelprize.org/prizes/medicine/2024/ambros/facts/">Victor Ambros</a>
+            </h2>
+          </div>
+        </header>
+        <div class="text">
+          <p>“for the discovery of microRNA and its role in post-transcriptional gene regulation”</p>
+        </div>
+      </div>
+      <figure class="featured-image">
+        <a href="https://www.nobelprize.org/prizes/medicine/2024/ambros/facts/">
+          <img src="image/victor ambros.webp" alt="John Hopfield">
+        </a>
+        <figcaption class="figcaption">
+          <p class="figcaption__caption">Victor Ambros</p>
+          <p class="figcaption__attribution">Victor Ambros. Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+    <article class="article">
+      <div class="content-wrapper">
+        <header class="content">
+          <div class="title">
+            <h2 class="headline">
+              <a href="https://www.nobelprize.org/prizes/medicine/2024/ruvkun/facts/">Gary Ruvkun</a>
+            </h2>
+          </div>
+        </header>
+        <div class="text">
+          <p>“for the discovery of microRNA and its role in post-transcriptional gene regulation”
+
+          </p>
+        </div>
+      </div>
+      <figure class="featured-image">
+        <a href="https://www.nobelprize.org/prizes/medicine/2024/ruvkun/facts/">
+          <img src="image/gary ruvkun.webp" alt="Geoffrey Hinton">
+        </a>
+        <figcaption class="figcaption">
+          <p class="figcaption__caption">Gary Ruvkun</p>
+          <p class="figcaption__attribution">Gary Ruvkun. Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+        </figcaption>
+      </figure>
+    </article>
+  
+  </section>
+
+
+
+  <section class="nobel-grid nobel-featured-content nobel-featured-default nobel-half-width" data-aos="zoom-out-up">
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="nobel-article nobel-halfwidth">
+        <div class="nobel-content-wrapper">
+            <header class="nobel-content-header">
+                <div class="nobel-title-small">
+                    <h2 class="nobel-headline" itemprop="headline">
+                        <a href="https://www.nobelprize.org/prizes/medicine/2024/press-release/">
+                            <p>Tiny RNAs with profound physiological importance</p>
+                        </a>
+                    </h2>
+                </div>
+            </header>
+            <div class="nobel-text">
+                <p>Victor Ambros and Gary Ruvkun discovered microRNA, a new class of tiny RNA molecules that play a crucial role in gene regulation. Their groundbreaking discovery in the small worm <em>C. elegans</em> revealed a completely new principle of gene regulation. This turned out to be essential for multicellular organisms, including humans. MicroRNAs are proving to be fundamentally important for how organisms develop and function.</p>
+            </div>
+            <div class="nobel-related">
+                <h3 class="nobel-related-title">Related articles</h3>
+                <ul>
+                    <li>
+                        <a href="https://www.nobelprize.org/prizes/medicine/2024/press-release/" title="Press release">Press release</a>
+                    </li>
+                    <li>
+                        <a href="https://www.nobelprize.org/prizes/medicine/2024/advanced-information/" title="Scientific background: For the discovery of microRNA and its role in post-transcriptional gene regulation">Scientific background: For the discovery of microRNA and its role in post-transcriptional gene regulation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <figure class="nobel-featured-image">
+            <a href="https://www.nobelprize.org/prizes/medicine/2024/press-release/">
+                <img src="https://www.nobelprize.org/uploads/2024/10/Carrier_1200x800_02-1024x676.jpg" alt="Illustration" />
+            </a>
+            <figcaption class="nobel-caption">
+                <p>© The Nobel Committee for Physiology or Medicine. Ill. Mattias Karlén</p>
+            </figcaption>
+        </figure>
+    </article>
+</section>
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+<h3 style="color: goldenrod; margin-left: 10%;"><b>The Nobel Prize in Literature 2024..</b></h3>
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+<article class="article" style="margin-left: 10%;" data-aos="zoom-in">
+  <div class="content-wrapper">
+    <header class="content">
+      <div class="title">
+        <h2 class="headline">
+          <a href="https://www.nobelprize.org/prizes/literature/2024/han/facts/">Han kang</a>
+        </h2>
+      </div>
+    </header>
+    <div class="text">
+      <p>“for her intense poetic prose that confronts historical traumas and exposes the fragility of human life”</p>
+    </div>
+  </div>
+  <figure class="featured-image">
+    <a href="https://www.nobelprize.org/prizes/literature/2024/han/facts/">
+      <img src="image/GZhiI0GXwAM98Ys.jpg" alt="John Hopfield">
+    </a>
+    <figcaption class="figcaption">
+      <p class="figcaption__caption">Han kang</p>
+      <p class="figcaption__attribution">Han Kang. Ill. Niklas Elmehed © Nobel Prize Outreach</p>
+    </figcaption>
+  </figure>
+</article>
+
+
+
+
+
+
+
+<section class="literature-section literature-content literature-color-default literature-width" data-aos="zoom-in">
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="literature-article literature-halfwidth">
+      <div class="literature-content-wrapper">
+          <header class="literature-header">
+              <div class="literature-title">
+                  <h2 class="literature-headline" itemprop="headline">
+                      <a href="https://www.nobelprize.org/prizes/literature/2024/han/facts/">
+                          <p>Han Kang</p>
+                      </a>
+                  </h2>
+              </div>
+          </header>
+          <div class="literature-text">
+              <p>The Nobel Prize in Literature 2024 is awarded to the South Korean author Han Kang, “for her intense poetic prose that confronts historical traumas and exposes the fragility of human life.”</p>
+              <p>In her oeuvre, Han Kang confronts historical traumas and invisible sets of rules and, in each of her works, exposes the fragility of human life. She has a unique awareness of the connections between body and soul, the living and the dead, and in her poetic and experimental style has become an innovator in contemporary prose.</p>
+              <p><a href="https://www.nobelprize.org/prizes/literature/2024/press-release/">Press release</a><br /><a href="https://www.nobelprize.org/prizes/literature/2024/bio-bibliography/">Biobibliography</a></p>
+          </div>
+      </div>
+      <figure class="literature-image">
+          <a href="https://www.nobelprize.org/prizes/literature/2024/han/facts/">
+              <img src="image/han kang 22222.webp" alt="South Korean writer Han Kang attends a photocall at Edinburgh International Book Festival at Charlotte Square Gardens on August 17, 2016 in Edinburgh, Scotland.">
+          </a>
+          <figcaption class="literature-caption">
+              <p>South Korean writer Han Kang attends a photocall at Edinburgh International Book Festival at Charlotte Square Gardens on August 17, 2016 in Edinburgh, Scotland.</p>
+              <p>Photo by Roberto Ricciuti/Getty Images</p>
+          </figcaption>
+      </figure>
+  </article>
+</section>
+
+
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+
+
+
+
+<section class="knowledge-section insight-content insight-bg-var insight-row-layout" data-aos="zoom-in">
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="knowledge-article insight-fullwidth">
+      <div class="knowledge-content-box">
+          <header class="knowledge-header">
+              <div class="knowledge-title-box">
+                  <h2 class="knowledge-headline" itemprop="headline">
+                      <a href="https://www.nobelprize.org/prizes/economic-sciences/2024/press-release/">
+                          <p>They provided an explanation for why some countries are rich and others poor</p>
+                      </a>
+                  </h2>
+              </div>
+          </header>
+          <div class="knowledge-description">
+              <p>This year’s laureates have provided new insights into why there are such vast differences in prosperity between nations. One important explanation is persistent differences in societal institutions. By examining the various political and economic systems introduced by European colonisers, Daron Acemoglu, Simon Johnson, and James Robinson have been able to demonstrate a relationship between institutions and prosperity. They have also developed theoretical tools that can explain why differences in institutions persist and how institutions can change.</p>
+          </div>
+          <div class="knowledge-related-links">
+              <h3 class="related-title">Related articles</h3>
+              <ul>
+                  <li><a href="https://www.nobelprize.org/prizes/economic-sciences/2024/press-release/">Press release</a></li>
+                  <li><a href="https://www.nobelprize.org/prizes/economic-sciences/2024/popular-information/">Popular information: They provided an explanation for why some countries are rich and others poor</a></li>
+                  <li><a href="https://www.nobelprize.org/prizes/economic-sciences/2024/advanced-information/">Scientific background to the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2024</a></li>
+              </ul>
+          </div>
+      </div>
+      <figure class="knowledge-image-box">
+          <a href="https://www.nobelprize.org/prizes/economic-sciences/2024/press-release/">
+              <img src="image/fffffffffffffffffffffffffff.webp" alt="Economics Prize Laureates" />
+          </a>
+         
+  </article>
+</section>
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+<footer class="site-footer "  role="contentinfo">
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-section about">
+              <h4>About the Nobel Prize Organisation</h4>
+              <p>The Nobel Prize is awarded to those who have conferred the greatest benefit to mankind.</p>
+          </div>
+
+          <div class="footer-section links">
+              <h4>Links</h4>
+              <ul>
+                  <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/thenobelfoundation.html">The Nobel Foundation</a></li>
+                  <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/Prize-Awarding%20Institutions.html">Prize-Awarding Institutions</a></li>
+                  <li><a href="/the-nobel-prize-organisation/outreach-organisations/">Outreach Organisations</a></li>
+                  <li><a href="https://www.nobelprize.org/press-room/">Press</a></li>
+                  <li><a href="https://www.nobelprize.org/contact">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section social">
+              <h4>Follow Us</h4>  
+              <ul>
+                  <li>
+                      <a href="https://www.facebook.com/nobelprize/" target="_blank">
+                       
+                          <img src="image/download.png" alt="Facebook Icon" class="social-icon"> Facebook
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/NobelPrize" target="_blank">
+                          <img src="image/twitter.png" alt="Facebook Icon" class="social-icon"> twitter
+
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://www.instagram.com/nobelprize/" target="_blank">
+                          <img src="image/instagram.avif" alt="Facebook Icon" class="social-icon"> instagram
+
+                        
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          
+      </div>
+  </div>
+
+  <div class="footer-credits">
+      <p>&copy; <span id="currentYear"></span> Nobel Prize | All rights reserved</p>
+  </div>
+</footer>
+
+
+ <!-- Bootstrap JS (including Popper) -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+</script>
+ </body>
+ </html>
+<script src="bosstrap.js"></script> 

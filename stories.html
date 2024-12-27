@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bosstrap.css">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+
+        .banner333 {
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto; /* Adds space between the banner and the navbar */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image fits within the banner dimensions */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 10%;
+}
+
+.banner333-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the banner area */
+}
+
+
+
+        .article-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 10px;
+            border-top: 4px solid #333;
+        }
+
+        .section-header-h3 {
+            font-size: 1.8rem;
+            color: #444;
+        }
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .subtitle p {
+            font-size: 1rem;
+            color: #555;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .title h2 p {
+            font-size: 1.5rem;
+            color: #222;
+            margin: 0;
+        }
+
+        .text p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .text a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .text a:hover {
+            text-decoration: underline;
+        }
+
+        .featuredimage {
+            position: relative;
+            margin-top: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .iframe {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .article {
+                flex-direction: row;
+                gap: 30px;
+            }
+
+            .content-wrapper {
+                flex: 1;
+            }
+
+            .featuredimage {
+                flex: 1;
+            }
+        }
+
+      .body{
+        background-color: black;
+      }
+
+      
+      .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+    </style>
+    
+</head>
+<body class="body">
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nobel Prizes Navbar</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="home.html">
+            <img src="image/looooooooo.png" alt="Nobel Prizes Logo" class="logo-img" style="width: 50px;">
+            <span>Nobel Prizes</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nobel prize & laureates
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="All Nobel Prize.html">All Nobel prizes</a></li>
+                        <li><a class="dropdown-item" href="All Nobel prizes 2024.html">All Nobel prizes 2024</a></li>
+                        <li><a class="dropdown-item" href="Physics prize.html">Physics prize</a></li>
+                        <li><a class="dropdown-item" href="Chemistry prize.html">Chemistry prize</a></li>
+                        <li><a class="dropdown-item" href="Medicine prize.html">Medicine prize</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                    </ul>
+                </li>
+                <!-- About link without dropdown -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                <li class="nav-item"><a class="nav-link" href="Educational.html">Educational</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Banner Section -->
+<div class="banner333">
+    <img src="image/the.png" alt="Banner Image" class="banner333-img">
+</div>
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+<h2 style="align-items: center; margin-left: 15%; color:goldenrod;" data-aos="zoom-in">Learn more about the Nobel Prizes 2024</h2>
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+<div class="dialogue-container"  data-aos="fade-right">
+    <!-- Text Section -->
+    <div class="text-section">
+        <h3 style="text-align: center; color: goldenrod;"><b>Nobel Prize Dialogue</b></h3>
+        <hr>
+        <h1 style="text-align: center;">Six prizes for the greatest benefit to humankind..</h1>
+        <p>
+            From poetic prose that confronts historical traumas to achieving a world free of nuclear weapons. From predicting proteins’ complex structures to training artificial neural networks using physics. From microRNA to new insights into how institutions affect prosperity.
+        </p>
+        <a href="https://www.nobelprize.org/six-prizes-for-the-greatest-benefit-to-humankind/">
+            Read the summarising article about the Nobel Prizes 2024
+        </a>
+    </div>
+    <!-- Image Section -->
+    <div class="image-section">
+        <img src="image/coinnnn.webp" alt="Dialogue Image" style="height: 50vh;">
+    </div>
+    </div>
+
+
+    <!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+<div class="dialogue-container" data-aos="fade-left">
+    <!-- Image Section on the left -->
+    <div class="image-section">
+        <img src="image/fig_fy_24_4x3-1024x676.webp" alt="Dialogue Image"  style="height: 60vh; width: 100%;">
+    </div>
+
+    <!-- Text Section on the right -->
+    <div class="text-section">
+        <h3 style=" color: goldenrod; margin-right: 25%;"><b>Big science leads to big discoveries</b></h3>
+        <hr>
+        
+
+        <p style="margin-left: 60%;"><b>The Nobel Prize in Physics 2019..</b></p>
+        <p style="margin-left: 55%;">
+            <a href="https://www.nobelprize.org/prizes/physics/2019/popular-information/">
+                Refined methods led to the discovery
+            </a>
+        </p>
+        <hr class="custom-line" style="width: 55%; margin-left: 48%;">
+
+        <p style="margin-left: 60%;"><b>The Nobel Prize in Physics 2017..</b></p>
+        <p style="margin-left: 60%;">
+            <a href="https://www.nobelprize.org/prizes/physics/2017/popular-information/">
+                LIGO – a gigantic interferometer
+            </a>
+        </p>
+        <hr class="custom-line" style="width: 55%; margin-left: 48%;">
+
+        <p style="margin-left: 60%;"><b>The Nobel Prize in Physics 2013..</b></p>
+        <p style="margin-left: 55%;">
+            <a href="https://www.nobelprize.org/prizes/physics/2017/popular-information/">
+                Extreme machines for extreme physics
+            </a>
+        </p>
+    </div>
+</div>
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+
+<h3 style=" color: goldenrod; margin-left: 25%;"><b>Inside the mind of a physics laureate</b></h3>
+
+
+
+<section class="article-grid featured-content" data-aos="zoom-in">
+   
+
+    <article itemscope itemtype="http://schema.org/BlogPosting" class="article">
+        <!-- Content Section -->
+        <div class="content-wrapper">
+            <header class="content">
+                <div class="subtitle">
+                    <p>Perspectives on life</p>
+                </div>
+                <div class="title">
+                    <h2 class="headline" itemprop="headline">
+                        <p>The right way to be wrong</p>
+                    </h2>
+                </div>
+            </header>
+            <div class="text">
+                <p>Ever wondered how Nobel Prize laureates think about the world? 2011 physics laureate Saul Perlmutter advocates for a world where we are more careful with what we say is truth.</p>
+                <p><a href="https://www.nobelprize.org/how-to-think-like-a-laureate/">More videos on how to think like a laureate</a></p>
+            </div>
+        </div>
+
+        <!-- Video Section -->
+        <figure class="featuredimage">
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IL_r_UwL68I?feature=oembed" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </figure>
+    </article>
+</section>
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+<h4 style="align-items: center; margin-left: 45%; color:goldenrod; font-size:30px;">Discoveries through the ages</h4>
+
+<!-- Card Section -->
+<section class="container my-5" data-aos="fade-down-right">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/88888888888888888888.jpg" class="card-img-top" style="width: 100%; height: 40vh;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">An eye for structure</h5>
+                    <p class="card-text">Dorothy Crowfoot Hodgkin’s discoveries in biochemistry and medicine include the determination of the structure of penicillin..</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/ddddddddddddddddddddddddd.jpg" class="card-img-top" style="width: 100%; height: 36vh;" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">DGame theory</h5>
+                    <p class="card-text">John Nash was awarded the prize in economic sciences for his work in game theory, and more specifically for his “Nash equilibrium theory”. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="image/wwwwwwwwwwwwwwwwwwwwww.jpg" class="card-img-top"  style="width: 100%; height: 40vh;"alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"> An inner GPS</h5>
+                    <p class="card-text">Learn about the discovery of “grid cells” that generate a coordinate system and allow for precise positioning and pathfinding..</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Horizontal line -->
+<hr class="custom-line">
+
+<div class="dialogue-container" data-aos="zoom-in">
+    <!-- Text Section -->
+    <div class="text-section">
+        <h3 style="text-align: center; color: goldenrod;"><b>Health and literature</b></h3>
+        <hr>
+        <h1 style="text-align: center;">“Literature is a great therapist”.</h1>
+        <p>
+          <b>  In this interview, 2018 literature laureate Olga Tokarczuk reflects on what health means to her, how literature and mental health are connected, and what she learned from working as a psychologist.</b>
+        </p>
+
+        <p><b>
+            Olga Tokarczuk takes part in the event the ‘Future of Health’ on 9 December.</b></p>
+       
+    </div>
+    <!-- Image Section -->
+    <div class="image-section">
+        <img src="image/5555555555555555555555555555555555555555555.jpg" alt="Dialogue Image" style="height: 50vh;">
+    </div>
+    </div>
+
+
+    <!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+
+<footer class="site-footer "  role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>About the Nobel Prize Organisation</h4>
+                <p>The Nobel Prize is awarded to those who have conferred the greatest benefit to mankind.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/thenobelfoundation.html">The Nobel Foundation</a></li>
+                    <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/Prize-Awarding%20Institutions.html">Prize-Awarding Institutions</a></li>
+                    <li><a href="/the-nobel-prize-organisation/outreach-organisations/">Outreach Organisations</a></li>
+                    <li><a href="https://www.nobelprize.org/press-room/">Press</a></li>
+                    <li><a href="https://www.nobelprize.org/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h4>Follow Us</h4>  
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/nobelprize/" target="_blank">
+                         
+                            <img src="image/download.png" alt="Facebook Icon" class="social-icon"> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/NobelPrize" target="_blank">
+                            <img src="image/twitter.png" alt="Facebook Icon" class="social-icon"> twitter
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nobelprize/" target="_blank">
+                            <img src="image/instagram.avif" alt="Facebook Icon" class="social-icon"> instagram
+
+                          
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer-credits">
+        <p>&copy; <span id="currentYear"></span> Nobel Prize | All rights reserved</p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS (including Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+<script src="bosstrap.js"></script>

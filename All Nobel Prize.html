@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bosstrap.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .year-title {
+            text-align: center;
+            font-size: 2em;
+            color: goldenrod;
+            margin-bottom: 20px;
+        }
+
+        .card-prize {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 700px;
+            transition: transform 0.3s;
+            
+        }
+
+        .card-prize:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-prize h3 a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .card-prize h3 a:hover {
+            color: goldenrod;
+        }
+
+        .card-prize--laureates--links {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .card-prize--laureates--links a {
+            color: #007acc;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .card-prize--laureates--links a:hover {
+            color: #0056a1;
+            text-decoration: underline;
+        }
+
+        .card-prize--laureates--motivation {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-left: 4px solid goldenrod;
+        }
+
+
+
+
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.dynamic-list--year {
+    text-align: center;
+    font-size: 2.5em;
+    color: goldenrod;
+    margin-bottom: 20px;
+}
+
+.card-prize {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 700px;
+    transition: transform 0.3s;
+}
+
+.card-prize:hover {
+    transform: translateY(-5px);
+}
+
+.card-prize h3 a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6em;
+}
+
+.card-prize h3 a:hover {
+    color: goldenrod;
+}
+
+.card-prize--laureates--links {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-prize--laureates--links a {
+    color: #007acc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.card-prize--laureates--links a:hover {
+    color: #0056a1;
+    text-decoration: underline;
+}
+
+.motivation {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 4px solid goldenrod;
+}
+
+
+
+.body{
+            background-color: black;
+        }
+
+
+
+
+
+        .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+    
+.banner333 {
+    width: 80%;
+    height: 80vh;
+    margin: 20px auto; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 10%;
+}
+
+.banner333-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+    </style>
+</head>
+<body>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nobel Prizes Navbar</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="body">
+    
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand logo" href="home.html">
+            <img src="image/looooooooo.png" alt="Nobel Prizes Logo" class="logo-img" style="width: 50px;">
+            <span>Nobel Prizes</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Nobel prize & laureates
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="All Nobel Prize.html">All Nobel prizes</a></li>
+                        <li><a class="dropdown-item" href="All Nobel prizes 2024.html">All Nobel prizes 2024</a></li>
+                        <li><a class="dropdown-item" href="Physics prize.html">Physics prize</a></li>
+                        <li><a class="dropdown-item" href="Chemistry prize.html">Chemistry prize</a></li>
+                        <li><a class="dropdown-item" href="Medicine prize.html">Medicine prize</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                    </ul>
+                </li>
+                <!-- About link without dropdown -->
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="stories.html">Stories</a></li>
+                <li class="nav-item"><a class="nav-link" href="Educational.html">Educational</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Banner Section -->
+<div class="banner333">
+    <img src="image/the.png" alt="Banner Image" class="banner333-img">
+</div>
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+<h1 style="text-align: center; color: #bd8d0b;" data-aos="zoom-in">All Nobel Prize</h1>
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+<p style="text-align: center; color: #fffdfd;" data-aos="zoom-in"><b>Between 1901 and 2024, the Nobel Prizes and the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel were awarded 627 times to 1,012 people and organisations. With some receiving the Nobel Prize more than once, this makes a total of 976 individuals and 28 organisations. Below, you can view the full list of Nobel Prizes and Nobel Prize laureates.</b></p>
+
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+
+<h2 class="year-title" data-aos="zoom-in">2024 Nobel Prizes</h2>
+
+    <div class="card-prize" data-aos="fade-right">
+        <h3><a href="https://www.nobelprize.org/prizes/physics/2024/summary/">The Nobel Prize in Physics 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/physics/2024/hopfield/facts/">John J. Hopfield</a> and 
+                <a href="https://www.nobelprize.org/prizes/physics/2024/hinton/facts/">Geoffrey Hinton</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for foundational discoveries and inventions that enable machine learning with artificial neural networks”
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="card-prize" data-aos="fade-left">
+        <h3><a href="https://www.nobelprize.org/prizes/chemistry/2024/summary/">The Nobel Prize in Chemistry 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/chemistry/2024/baker/facts/">David Baker</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for computational protein design”
+            </blockquote>
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/chemistry/2024/hassabis/facts/">Demis Hassabis</a> and 
+                <a href="https://www.nobelprize.org/prizes/chemistry/2024/jumper/facts/">John Jumper</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for protein structure prediction”
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="card-prize" data-aos="fade-right">
+        <h3><a href="https://www.nobelprize.org/prizes/medicine/2024/summary/">The Nobel Prize in Physiology or Medicine 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/medicine/2024/ambros/facts/">Victor Ambros</a> and 
+                <a href="https://www.nobelprize.org/prizes/medicine/2024/ruvkun/facts/">Gary Ruvkun</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for the discovery of microRNA and its role in post-transcriptional gene regulation”
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="card-prize" data-aos="fade-left">
+        <h3><a href="https://www.nobelprize.org/prizes/literature/2024/summary/">The Nobel Prize in Literature 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/literature/2024/han/facts/">Han Kang</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for her intense poetic prose that confronts historical traumas and exposes the fragility of human life”
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="card-prize" data-aos="fade-right">
+        <h3><a href="https://www.nobelprize.org/prizes/peace/2024/summary/">The Nobel Peace Prize 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/peace/2024/nihon-hidankyo/facts/">Nihon Hidankyo</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for its efforts to achieve a world free of nuclear weapons and for demonstrating through witness testimony that nuclear weapons must never be used again”
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="card-prize" data-aos="fade-left">
+        <h3><a href="https://www.nobelprize.org/prizes/economic-sciences/2024/summary/">The Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2024</a></h3>
+        <div class="card-prize--laureates">
+            <div class="card-prize--laureates--links">
+                <a href="https://www.nobelprize.org/prizes/economic-sciences/2024/acemoglu/facts/">Daron Acemoglu</a>, 
+                <a href="https://www.nobelprize.org/prizes/economic-sciences/2024/johnson/facts/">Simon Johnson</a>, and 
+                <a href="https://www.nobelprize.org/prizes/economic-sciences/2024/robinson/facts/">James A. Robinson</a>
+            </div>
+            <blockquote class="card-prize--laureates--motivation">
+                “for studies of how institutions are formed and affect prosperity”
+            </blockquote>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+<h2 class="dynamic-list--year" data-aos="zoom-in">2023</h2>
+
+<div class="card-prize" data-aos="fade-right">
+  <h3>
+    <a href="https://www.nobelprize.org/prizes/physics/2023/summary/">The Nobel Prize in Physics 2023</a>
+  </h3>
+  <div class="card-prize--laureates">
+    <div class="card-prize--laureates--links">
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/physics/2023/agostini/facts/">Pierre Agostini</a>,
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/physics/2023/krausz/facts/">Ferenc Krausz</a>, and
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/physics/2023/lhuillier/facts/">Anne L’Huillier</a>
+    </div>
+    <blockquote class="motivation">“for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter”</blockquote>
+  </div>
+</div>
+
+<div class="card-prize" data-aos="fade-left">
+  <h3>
+    <a href="https://www.nobelprize.org/prizes/chemistry/2023/summary/">The Nobel Prize in Chemistry 2023</a>
+  </h3>
+  <div class="card-prize--laureates">
+    <div class="card-prize--laureates--links">
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/chemistry/2023/bawendi/facts/">Moungi Bawendi</a>,
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/chemistry/2023/brus/facts/">Louis Brus</a>, and
+      <a class="card-prize--laureates--link" href="https://www.nobelprize.org/prizes/chemistry/2023/yekimov/facts/">Aleksey Yekimov</a>
+    </div>
+    <blockquote class="motivation">“for the discovery and synthesis of quantum dots”</blockquote>
+  </div>
+</div>
+
+<!-- Repeat structure for other awards -->
+
+
+
+
+
+
+<h2 class="dynamic-list--year" data-aos="zoom-in">2022</h2>
+
+<div class="card-prize" data-aos="fade-up-right">
+    <h3><a href="https://www.nobelprize.org/prizes/physics/2022/summary/">The Nobel Prize in Physics 2022</a></h3>
+    <div class="card-prize--laureates">
+        <div class="card-prize--laureates--links">
+            <a href="https://www.nobelprize.org/prizes/physics/2022/aspect/facts/">Alain Aspect</a>, 
+            <a href="https://www.nobelprize.org/prizes/physics/2022/clauser/facts/">John Clauser</a>, and 
+            <a href="https://www.nobelprize.org/prizes/physics/2022/zeilinger/facts/">Anton Zeilinger</a>
+        </div>
+        <blockquote class="motivation">“for experiments with entangled photons, establishing the violation of Bell inequalities and pioneering quantum information science”</blockquote>
+    </div>
+</div>
+
+<!-- Repeat similar structure for other prizes -->
+
+
+
+
+
+
+
+<!-- Horizontal line -->
+<hr class="custom-line">
+
+
+<footer class="site-footer "  role="contentinfo">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>About the Nobel Prize Organisation</h4>
+                <p>The Nobel Prize is awarded to those who have conferred the greatest benefit to mankind.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/thenobelfoundation.html">The Nobel Foundation</a></li>
+                    <li><a href="file:///C:/Users/ADMIN/Pictures/nobel%20and%20prizes/Prize-Awarding%20Institutions.html">Prize-Awarding Institutions</a></li>
+                    <li><a href="/the-nobel-prize-organisation/outreach-organisations/">Outreach Organisations</a></li>
+                    <li><a href="https://www.nobelprize.org/press-room/">Press</a></li>
+                    <li><a href="https://www.nobelprize.org/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social"> 
+                <h4>Follow Us</h4>  
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/nobelprize/" target="_blank">
+                         
+                            <img src="image/download.png" alt="Facebook Icon" class="social-icon"> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/NobelPrize" target="_blank">
+                            <img src="image/twitter.png" alt="Facebook Icon" class="social-icon"> twitter
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nobelprize/" target="_blank">
+                            <img src="image/instagram.avif" alt="Facebook Icon" class="social-icon"> instagram
+
+                          
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer-credits">
+        <p>&copy; <span id="currentYear"></span> Nobel Prize | All rights reserved</p>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap JS (including Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
+<script src="bosstrap.js"></script>
+
